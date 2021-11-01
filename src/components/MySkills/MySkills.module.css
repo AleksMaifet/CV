@@ -1,0 +1,64 @@
+.mySkillsWrapper {
+    text-align: center;
+    background: aqua;
+    min-height: 100vh;
+}
+.mySkillsContainer {
+    display: inline-block;
+    margin: 40px 0;
+}
+.wrapperForBlock {
+    padding: 3.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapperForBlockContainer {
+    display: flex;
+    flex: 0 1 24%;
+    justify-content: center;
+}
+.blockContainerSkills {
+    display: flex;
+    padding-bottom: 2.5rem;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(31, 39, 27, 0) 0%, rgba(31, 39, 27, 0.87) 100%);
+    transition: clip-path 0.3s linear;
+}
+.imageContainerSkills {
+    width: 50%;
+    margin: 0.5rem auto;
+    height: 50px;
+}
+.titleBlockSkills {
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05em;
+    color: #000;
+    margin: 2rem 0;
+}
+.textBlockSkills {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 0 3rem;
+    flex: 1 1 auto;
+}
+@media (max-width: 1190px) {
+.wrapperForBlock {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.wrapperForBlockContainer {
+    margin: 5rem;
+}
+.blockContainerSkills {
+    width: 250px;
+}
+}
+@media (max-width: 1190px) {
+    .mySkillsContainer {
+        margin: 0;
+    }
+}

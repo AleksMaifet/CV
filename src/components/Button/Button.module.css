@@ -1,0 +1,20 @@
+.wrapperbtn {
+    padding: 0.4rem 3rem;
+    border: 0.2rem solid white;
+    background-color: red;
+    transition: ease 0.3s;
+}
+.subbtn {
+    color: white;
+}
+
+.wrapperbtn:hover {
+    background: orange;
+    cursor: pointer;
+}
+.containerbtn {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

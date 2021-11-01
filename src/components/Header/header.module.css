@@ -1,0 +1,45 @@
+.header {
+    background: deepskyblue;
+}
+.navList {
+    display: flex;
+    justify-content: flex-end;
+}
+.ulList {
+    display: flex;
+}
+.navItem {
+    padding: 0 3rem;
+}
+a {
+    position: relative;
+}
+a:hover {
+    color: white;
+}
+a::after {
+     content: "";
+     height: 5px;
+     width: 0;
+     background: white ;
+     box-shadow: 0 0 2px white;
+     border-radius: 10px;
+     position: absolute;
+     bottom: -5px;
+     right: 0;
+     transition: 0.3s ease;
+ }
+a:hover::after {
+     width: 100%;
+     left: 0;
+}
+
+@media (max-width: 880px) {
+    .ulList {
+        display: none;
+    }
+    .header {
+        position: sticky;
+        top: 0;
+    }
+}
