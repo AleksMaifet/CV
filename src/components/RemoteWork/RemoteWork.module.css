@@ -1,0 +1,8 @@
+.wrapperForBlockContainer {
+    background-color: lightyellow;
+    padding: 5rem 0;
+}
+.wrapperContainer {
+    text-align: center;
+    border: 1px solid grey;
+}

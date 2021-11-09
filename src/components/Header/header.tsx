@@ -1,11 +1,11 @@
 import React from "react";
 import s from './header.module.css'
 import c from '../../App.module.css'
-import { NavLink } from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 import {BurgerMenu} from "../BurgerMenu/BurgerMenu";
 
 
-export const Header = () => {
+export const Header = withRouter((props) => {
 
 	return (
 		<div className={s.header}>
@@ -21,14 +21,14 @@ export const Header = () => {
 						<li className={s.navItem}>
 							<NavLink to={'/works'}>Works</NavLink>
 						</li>
-						{/*<li className={s.navItem}>*/}
-						{/*	<NavLink to={}>Contact</NavLink>*/}
-						{/*</li>*/}
+						<li className={s.navItem}>
+							<NavLink to={'/contacts'}>Contacts</NavLink>
+						</li>
 					</ul>
 				<BurgerMenu/>
 				</nav>
 			</div>
 		</div>
 	)
-}
+})
 

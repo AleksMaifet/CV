@@ -1,0 +1,47 @@
+.wrapperFooter {
+    background-color: aqua;
+    text-align: center;
+    padding: 1rem 0;
+}
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+}
+.wrapperIdentification {
+    display: flex;
+    justify-content: center;
+}
+.identification {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 30%;
+}
+.identificationBlock {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+}
+@media (max-width: 760px) {
+    .wrapperFooter {
+        padding: 0;
+    }
+    .identificationBlock {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 690px) {
+    .identificationBlock {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .identificationBlock {
+        width: 18px;
+        height: 18px;
+    }
+}

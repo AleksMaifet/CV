@@ -1,0 +1,43 @@
+.wrapperContacts {
+    background-color: lightpink;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 8rem;
+}
+.containerContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 40rem;
+}
+.formContacts {
+    flex-direction: column;
+    display: inline-block;
+    width: 30rem;
+}
+.inputContact {
+    width: 100%;
+    height: 2rem;
+}
+.textAreaContact {
+    width: 100%;
+    height: 8rem;
+    resize:none;
+}
+.secondDivInput {
+    padding: 1rem 0;
+}
+
+@media (max-width: 570px) {
+    .formContacts {
+        width: 15rem;
+    }
+    .containerContacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid black;
+        height: 25rem;
+    }
+}

@@ -4,18 +4,19 @@ import s from './Button.module.css'
 
 type ButtonType = {
 	buttonValue:string
+	callback?:() => void
 }
 
 
-export const Button = (props: ButtonType) => {
-	const {buttonValue} = props
+export const Button = React.memo((props: ButtonType) => {
+	const {buttonValue, callback} = props
 	return (
 		<div className={s.containerbtn}>
-			<button className={s.wrapperbtn}>
-				<p className={s.subbtn}>
+			<button className={s.wrapperbtn} onClick={callback}>
+				<h3 className={s.subbtn}>
 					{buttonValue}
-				</p>
+				</h3>
 			</button>
 		</div>
 	)
-}
+})

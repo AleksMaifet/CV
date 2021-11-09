@@ -1,7 +1,6 @@
 import React from "react";
 import s from './MySkills.module.css'
 
-
 type MySkillsBlockType = {
 	image:string
 	text:string
@@ -11,12 +10,12 @@ type MySkillsBlockType = {
 
 export const MySkillsBlock = React.memo((props:MySkillsBlockType) => {
 
-	const {image,text,title} = props
+	const {image, text, title} = props
 
 	return (
 		<React.Fragment>
-			<div className={s.wrapperForBlockContainer}>
-				<div className={s.blockContainerSkills}>
+			<div className={`${s.blockContainerSkills}`}>
+				<div className={s.blockContainerElementSkills}>
 					<div className={s.imageContainerSkills}>
 						<img src={image}/>
 					</div>

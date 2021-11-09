@@ -5,26 +5,31 @@
 }
 .myWorksContainer {
     display: inline-block;
-    margin: 40px 0;
+    margin: 10px 0;
 }
 .wrapperForBlock {
-    padding: 3.8rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:8rem;
 }
 .wrapperForBlockContainer {
-    flex: 0 1 35%;
-    border: 1px solid black;
-}
-.wrapperForBlockContainer:hover {
-    border: 1px solid orange;
-    transition: 0.3s linear;
+    display: flex;
+    flex: 0 1 30%;
+    width: 20%;
+    padding: 0 10px;
+    margin-bottom: 30px;
 }
 .blockContainerWorks {
     display: flex;
-    padding-bottom: 2.5rem;
     flex-direction: column;
-    text-align: center;
+    border: 1px solid;
+    width: 100%;
+    transition: 0.3s;
+}
+.blockContainerWorks:hover {
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    transition: 0.3s;
 }
 .imageContainerWorks {
     width: 50%;
@@ -32,6 +37,9 @@
     height: 50px;
 }
 .titleBlockWorks {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
     font-weight: 500;
     font-size: 2.1rem;
     line-height: 2.5rem;
@@ -42,6 +50,7 @@
 .textBlockWorks {
     font-size: 1.4rem;
     line-height: 2rem;
+    padding: 0 3rem;
     flex: 1 1 auto;
 }
 .textBlockWorks {
@@ -54,26 +63,19 @@
     padding: 1rem;
     text-align: initial;
 }
+
+
 @media (max-width: 1190px) {
-.wrapperForBlock {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-}
-.wrapperForBlockContainer {
-    margin: 5rem;
-}
-.blockContainerWorks {
-    width: 25rem;
-}
-    @media (max-width: 1190px) {
-        .myWorksContainer {
-            margin: 0;
-        }
+    .wrapperForBlock {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .wrapperForBlockContainer {
+        display: flex;
+        flex: 0 1 350px;
+        width: 20%;
+        padding: 0 10px;
+        margin-bottom: 30px;
     }
 }
-@media (max-width: 444px) {
-    .blockContainerWorks {
-        width: 18rem;
-    }
-}
+

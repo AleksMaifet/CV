@@ -23,9 +23,10 @@ export const BurgerMenu = () => {
 			</button>
 			{burger &&
 			<div className={s.menu}>
-				<NavLink to={'/main'} className={s.active}>Main</NavLink>
-				<NavLink to={'/skills'} className={s.active}>Skills</NavLink>
-				<NavLink to={'/works'} className={s.active}>Works</NavLink>
+					<NavLink to={'/main'} activeClassName={s.active} className={s.link}>Main</NavLink>
+					<NavLink to={'/skills'} activeClassName={s.active} className={s.link}>Skills</NavLink>
+					<NavLink to={'/works'} activeClassName={s.active} className={s.link}>Works</NavLink>
+					<NavLink to={'/contacts'} activeClassName={s.active} className={s.link}>Contacts</NavLink>
 			</div>
 			}
 		</nav>
